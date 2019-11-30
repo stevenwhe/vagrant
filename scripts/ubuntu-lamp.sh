@@ -24,6 +24,10 @@ sudo systemctl start mysql
 sudo mysql -u root -e "SHOW DATABASES";
 
 # Download Start Content
+cd /vagrant
+sudo -u vagrant wget -q https://raw.githubusercontent.com/stevenwhe/vagrant/master/scripts/ubuntu-lamp.sh
+sudo -u vagrant wget -q https://raw.githubusercontent.com/stevenwhe/vagrant/master/files/info.php
+
 sudo systemctl restart apache2
 
 
